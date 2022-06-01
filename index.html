@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background: #A63C24;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .div1 {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .div1 button {
+            width: 150px;
+            height: 50px;
+            border: 2px solid #D9D2D0;
+            background-color: #BF8069;
+            box-shadow: inset;
+            color: #292A40;
+            border-radius: 5px;
+        }
+        .div3{
+            display: none;
+            width:100%;
+            max-height: 500px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <span>如果世界有驚喜,肯肯定就在點擊裡</span>
+        <button class="div2">Click Me!</button>
+    </div>
+    <div class="div3 ">
+        <img class="animate__shakeY" src="./EB32F396-6266-4019-830A-B943ABEAF6C0.png" alt="">
+    </div>
+    <script>
+        const div1 = document.querySelector('.div1');
+        const div2 = document.querySelector('.div2');
+        const div3 = document.querySelector('.div3')
+        function show() {
+            div1.style.display = "none";
+            div3.style.display = "flex";
+        }
+        div2.addEventListener('click', show)
+    </script>
+</body>
+
+</html>
