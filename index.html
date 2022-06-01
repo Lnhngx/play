@@ -50,19 +50,19 @@
             }
 
             25% {
-                transform: rotate(90) scale(0.25);
+                transform: rotate(90deg) scale(0.25);
             }
 
             50% {
-                transform: rotate(180) scale(0.5);
+                transform: rotate(180deg) scale(0.5);
             }
 
             75% {
-                transform: rotate(270) scale(0.75);
+                transform: rotate(270deg) scale(0.75);
             }
 
             100% {
-                transform: rotate(360) scale(1);
+                transform: rotate(360deg) scale(1);
             }
         }
     </style>
@@ -84,6 +84,7 @@
             div1.style.display = "none";
             div3.style.display = "flex";
             document.body.style.background = "pink";
+            div3.style.animation = "3s  normal running example";
         }
         div2.addEventListener('click', show)
     </script>
